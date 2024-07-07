@@ -12,9 +12,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.get('/', (req: Request, res: Response) => {
-  res.json({
-    message: 'Hello User Authentication and Organization',
-  });
+  res.send('Welcome to My Application');
 });
 
 app.use('/auth', authRoutes);
